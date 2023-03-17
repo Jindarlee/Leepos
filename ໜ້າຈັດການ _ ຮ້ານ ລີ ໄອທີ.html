@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ເຂົ້າສູ່ລະບົບ | ຮ້ານ ລີ ໄອທີ</title>
+ 
+        <script type="text/javascript">if (parent.frames.length !== 0) { top.location = 'http://localhost/ldpos/login'; }</script>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" name="viewport">
+    <link href="http://localhost/ldpos/themes/default/assets/dist/css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+            
+<body class="login-page login-page-green rtl rtl-inv">
+
+    <div class="login-box">
+    
+        <div class="login-logo">
+            <a href="http://localhost/ldpos/"><img src="http://localhost/ldpos/uploads/6x2.png" alt="ຮ້ານ ລີ ໄອທີ" /></a>
+        </div>
+        
+        <div class="login-box-body">
+                        <p class="login-box-msg">ກະລຸນາເຂົ້າສູ່ລະບົບຂອງທ່ານ.</p>
+            <form action="http://localhost/ldpos/auth/login" method="post" accept-charset="utf-8">
+        <input type="hidden" name="spos_token" value="139c574dda110a5f5baf1949fff0a0bb" />
+            <div class="form-group has-feedback">
+                <input type="text" name="identity" value="" class="form-control" placeholder="ທີຢູ່ Email" />
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" name="password" value="" class="form-control" placeholder="ລະຫັດຜ່ານ" />
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+
+            <div class="checkbox pull-left" style="margin-top: 0;">
+                <div class="custom-checkbox">
+                    <input type="checkbox" name="remember" value="1" checked="checked"  id="remember" />
+                    <label for="remember" style="padding-left:5px;">ຈຳໄວ້</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block btn-flat"><i class="glyphicon glyphicon-log-in"></i> &nbsp;ເຂົ້າສູ່ລະບົບ</button>
+
+            </form>
+            <div class="">
+                <p>&nbsp;</p>
+                <p><span class="text-danger">ລືມລະຫັດຜ່ານບໍ?</span><br>
+                    ບໍ່ຕ້ອງກັນວົນ! <a href="#" class="text-danger" data-toggle="modal" data-target="#myModal">ກົດທີນີ້</a> ເພື່ອທຳການຣີເຊັດ </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
+        class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="http://localhost/ldpos/auth/forgot_password" method="post" accept-charset="utf-8">
+<input type="hidden" name="spos_token" value="139c574dda110a5f5baf1949fff0a0bb" />                                                       
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</i></button>
+                    <h4 class="modal-title">ລືມລະຫັດຜ່ານບໍ?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Enter your e-mail address below to reset your password.</p>
+                    <input type="email" name="forgot_email" placeholder="ທີຢູ່ Email" autocomplete="off"
+                    class="form-control placeholder-no-fix">
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default pull-left" type="button">ປິດອອກ</button>
+                    <button class="btn btn-primary" type="submit">ສຳເລັດ</button>
+                </div>
+                </form>            </div>
+        </div>
+    </div>
+
+    <script src="http://localhost/ldpos/themes/default/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="http://localhost/ldpos/themes/default/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://localhost/ldpos/themes/default/assets/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            if ($('#identity').val())
+                $('#password').focus();
+            else
+                $('#identity').focus();
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%'
+            });
+        });
+    </script>
+</body>
+</html>
